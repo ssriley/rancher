@@ -12,7 +12,7 @@ logstash-indexer:
   - logstash
   - -f
   - /etc/logstash
-  image: safesystems/logstash:latest
+  image: logstash:latest
   stdin_open: true
   environment:
     netcomply_id1: "${netcomply_id}"
