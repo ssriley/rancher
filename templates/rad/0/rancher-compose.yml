@@ -25,7 +25,7 @@
         mutate {
           add_field => {"nc_id" => "${netcomply_id}"}
           add_field => {"aws_access_id" => "${aws_access_id}"}
-          add_field => {"aws_queue_name" => "${aws_queue_name"}
+          add_field => {"aws_queue_name" => "${aws_queue_name}"}
           add_field => {"aws_secret_access_key" => "${aws_secret_access_key}"}
         }
     - variable: "indexer_outputs"
