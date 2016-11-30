@@ -1,6 +1,6 @@
 .catalog:
   name: "SafeSytems_RAD"
-  version: "5.0.1-safesystems"
+  version: "5.0.2-safesystems"
   description: "Safe Systems Logstash for RAD"
   questions:
     - variable: "collector_inputs"
