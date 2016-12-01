@@ -19,8 +19,6 @@ opencanary:
 portscan:
   restart: always
   image: safesystems/portscan:latest
-  networks: 
-    - host
   volumes: 
     - /opt/safesystems/logs:/var/log/
   labels:
