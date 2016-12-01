@@ -12,7 +12,7 @@
       required: false
       default: |
         file {
-          path => ["/opt/safesystems/logs"]
+          path => ["/opt/safesystems/logs/*"]
           codec => "json"
         }
     - variable: "indexer_filters"
