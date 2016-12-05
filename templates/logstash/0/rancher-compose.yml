@@ -31,7 +31,7 @@
         }
     - variable: "logstash_outputs"
       description: |
-        Logstash indexing tier outputs. These will be added
+        Logstash outputs. These will be added
         directly to output { } section of logstash.conf
       label: "Logstash outputs"
       type: "multiline"
@@ -71,7 +71,14 @@
       default: "enter NC_ID"
       required: false
       type: "string"
-logstash-indexer:
+    - variable: "Safe_Systems_Service"
+      description: |
+        Safe Systems stack/service to add logstash to.
+      label: "Safe Systems stack/service"
+      default: "choose a Safe Systems Service"
+      required: false
+      type: "service"
+logstash:
   metadata:
     logstash:
       inputs: |
