@@ -1,0 +1,23 @@
+opencanary:
+  restart: always
+  image: safesystems/opencanary:latest
+  ports: 
+    - "21:21"
+    - "1433:1433"
+    - "3389:3389"
+  volumes: 
+    - /opt/safesystems/logs:/var/log
+  labels:
+    io.rancher.container.hostname_override: container_name
+samba:
+  restart: always
+  image: safesystems/samba:latest
+  ports: 
+    - "139:139"
+    - "445:445"
+  volumes: 
+    - /opt/safesystems/logs:/var/log/
+    - /opt/safesystems/samba:/opt/safesystems/samba/
+  labels:
+    io.rancher.container.hostname_override: container_name
+
