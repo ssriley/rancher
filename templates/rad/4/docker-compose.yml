@@ -9,6 +9,7 @@ opencanary:
     - /opt/safesystems/logs:/var/log
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.container.pull_image: always
 samba:
   restart: always
   image: safesystems/samba:latest
@@ -20,4 +21,5 @@ samba:
     - /opt/safesystems/samba:/opt/safesystems/samba/
   labels:
     io.rancher.container.hostname_override: container_name
+    io.rancher.container.pull_image: always
 
