@@ -1,6 +1,6 @@
 opencanary:
   restart: always
-  image: safesystems/opencanary
+  image: safesystems/opencanary:latest
   ports: 
     - "21:21"
     - "1433:1433"
@@ -11,7 +11,7 @@ opencanary:
     io.rancher.container.hostname_override: container_name
 samba:
   restart: always
-  image: safesystems/samba
+  image: safesystems/samba:latest
   ports: 
     - "139:139"
     - "445:445"
