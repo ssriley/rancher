@@ -22,4 +22,11 @@ samba:
   labels:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.pull_image: always
-
+portscan:
+  restart: always
+  image: safesystems/portscan:latest
+  volumes: 
+    - /opt/safesystems/logs:/var/log/
+  net: "host"
+  labels:
+    io.rancher.container.hostname_override: container_name
