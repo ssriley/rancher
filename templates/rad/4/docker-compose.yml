@@ -27,6 +27,7 @@ portscan:
   image: safesystems/portscan:latest
   volumes: 
     - /opt/safesystems/logs:/var/log/
-  net: "host"
+  net: 
+    - "host"
   labels:
     io.rancher.container.hostname_override: container_name
